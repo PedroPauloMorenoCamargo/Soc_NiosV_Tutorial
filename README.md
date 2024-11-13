@@ -232,38 +232,3 @@ We will now create a basic SoC with the following components:
 
 ### Step5: Compiling the Project
 
----
-
-## Writing the LED Control Code
-
-With the SoC created, let’s write a simple C program to control the LEDs:
-
-```c
-#include <stdio.h>
-#include "system.h"
-#include <alt_types.h>
-#include <io.h> // For Avalon read/write functions
-
-void delay(int n) {
-    volatile unsigned int delay = 0;
-    while (delay < n) {
-        delay++;
-    }
-}
-
-int main(void) {
-    unsigned int led = 0;
-
-    printf("Nios V Tutorial: LED Control\n");
-
-    while (1) {
-        if (led < PIO_0_DATA_WIDTH) { // Use the data width defined for the PIO
-            IOWR_32DIRECT(PIO_0_BASE, 0, 0x01 << led++);
-            usleep(50000); // 50 ms delay
-        } else {
-            led = 0; // Reset LED position after reaching the limit
-        }
-    }
-
-    return 0;
-}
