@@ -41,7 +41,7 @@ If Quartus is not yet installed on your system, begin by downloading the necessa
 
 Once downloaded, place all files in the same folder, as shown below:
 
-**Image of files grouped together**: ![Grouped Files](./imgs/Quartus_Build.png)
+- **Image of files grouped together**: ![Grouped Files](./imgs/Quartus_Build.png)
 
 Now, run the `QuartusSetup.exe` file to initiate the installation process.
 
@@ -130,6 +130,12 @@ begin
 
 end rtl;
 ```
+
+Right click the file and set it up as the Top Level Entity:
+
+1. **Project ➡️ Set as Top-Level Entity**
+
+### Step4: Assigning the I/Os
 
 
 
