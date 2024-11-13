@@ -92,7 +92,7 @@ In Quartus: **File ➡️ New Project Wizard**
    - Look for the FPGA settings:
      - **Family**: Cyclone V
      - **Name**: 5CSXFC6D6F31C6
-     
+
      ![License File Configuration](./imgs/Project_DE10_settings.png)
 
 5. 🆗 **Finalize the Wizard**
@@ -150,8 +150,16 @@ According to the [DE10-Standard User Manual](./pdfs/DE10-Standard_User_manual.pd
 
 ![Pin Configuration](./imgs/Pins_DE10.png)
 
+Lastly, you need to add a new file to the project that outlines the boundary conditions of the project for the tool.
 
+To create a new constraints file, follow these steps:
 
+1. Go to **File ➡️ New File ➡️ Synopsys Design Constraints File**.
+2. Save the file as:
+
+   ```plaintext
+   Nios_V_RTL.sdc
+    ```
 
 
 ---
