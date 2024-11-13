@@ -27,7 +27,6 @@ If Quartus is not yet installed on your system, begin by downloading the necessa
 - **Quartus Download**: ![Quartus Download](./imgs/Quartus_download.png)
 - **Cyclone V Download**: ![Cyclone V Download](./imgs/Cyclonev_Download.png)
 - **Ashling RiscFree IDE Download**: ![Ashling RiscFree IDE Download](./imgs/Aishling_Download.png)
-- **Quartus Build**: ![Quartus Build](./imgs/Quartus_Build.png)
 
 Once downloaded, place all files in the same folder, as shown below:
 
