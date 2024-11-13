@@ -16,6 +16,17 @@ To follow this tutorial, you will need:
 
 ---
 
+## Nios V
+
+**Nios V** is a soft processor provided by Intel and integrated into Quartus. Based on a RISC-V architecture, Nios V supports the addition of custom instructions implemented in HDL. This makes it highly customizable.
+
+---
+
+
+## Comparison Nios V and Nios II
+
+
+---
 ## Setting Up the Tools
 
 To get started with the project, you’ll need to download and install a few essential tools. These include **Quartus 23.1std (or later)** and the **Ashling RiscFree IDE**, which will be used to compile and run the project, respectively.
@@ -57,22 +68,32 @@ In the License Setup window, add the path to the `.dat` file in the **License Fi
 
 ![License File Configuration](./imgs/License_Setup.png)
 
+With everything now set up, you’re ready to begin working on the project.
 
+---
+
+## DE10-Standard
+
+### Step 1: Setup Files
 
 
 ---
 
-## Platform Designer (PD)
 
-Platform Designer (formerly QSYS) is a tool provided by Intel and integrated into Quartus, enabling you to develop complex systems visually. You can add and connect IP cores to create applications quickly.
 
----
 
-## Nios V
 
-**Nios V** is a soft processor provided by Intel and integrated into Quartus. Based on a RISC-V architecture, Nios V supports the addition of custom instructions implemented in HDL. This makes it highly customizable.
 
----
+
+
+
+
+
+
+
+
+
+
 
 ## Creating a Simple SoC
 
