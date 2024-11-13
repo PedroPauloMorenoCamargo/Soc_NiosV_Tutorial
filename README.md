@@ -188,16 +188,10 @@ We will now create a basic SoC with the following components:
 
 #### Step-by-Step Guide
 
-#### Step-by-Step Guide
-
-1. **Create a New Project**:
-    - Copy the `Lab1_FPGA_RTL/` folder and rename it to `Lab2_FPGA_NIOS/`.
-    - Open the project in Quartus from this new folder.
-
-2. **Open Platform Designer**:
+1. **Open Platform Designer**:
     - In Quartus, go to **Tools ➡️ Platform Designer**.
 
-3. **Add Components**:
+2. **Add Components**:
     - Add the following components with the specified configurations:
         - **On-Chip Memory (RAM or ROM Intel FPGA IP)**
             - Type: RAM
@@ -212,16 +206,24 @@ We will now create a basic SoC with the following components:
             - Enable Debug and Enable Reset from Debug Module
             - Reset Agent: The On-Chip Memory added
 
-4. **Make the Connections**:
+3. **Make the Connections**:
     - Refer to the image below for the correct connections:
     ![PD_DE10](./imgs/PD_DE10.png)
 
-5. **Assign Base Addresses**:
+4. **Assign Base Addresses**:
     - There may still be some errors due to memory assignments. To resolve these, click on **System ➡️ Assign Base Addresses** to have the system automatically assign memory spaces without conflicts.
+    **Observation**:
+        - The warnings and informational messages shown in the image below are expected and are not problematic.
+        ![Warnings](./imgs/Warnings_DE10.png)
 
-**Observation**:
-   - The warnings and informational messages shown in the image below are expected and are not problematic.
-   ![Warnings](./imgs/Warnings_DE10.png)
+
+5. **Save the File**:
+    - **File ➡️ Save as** or `CTRL + S`
+    - Name it `niosv.qsys`.
+
+6. **Generate HDL**:
+    - Click on Generate HDL for the PD to generate the project.
+    - Select `Create HDL Design Files For Synthesis: VHDL`
 
 
 ---
