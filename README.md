@@ -150,7 +150,7 @@ According to the [DE10-Standard User Manual](./pdfs/DE10-Standard_User_manual.pd
 
 ![Pin Configuration](./imgs/Pins_DE10.png)
 
-Lastly, you need to add a new file to the project that outlines the boundary conditions of the project for the tool.
+Furthermore, you need to add a new file to the project that outlines the boundary conditions of the project for the tool.
 
 To create a new constraints file, follow these steps:
 
@@ -169,6 +169,9 @@ To create a new constraints file, follow these steps:
     derive_pll_clocks
 
     ```
+
+Lastly, recompile the project to apply the changes. After recompiling, you should observe that there are no longer any critical errors in the project.
+
 
 
 ---
