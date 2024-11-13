@@ -1,6 +1,6 @@
 # Nios V Tutorial
 
-In this tutorial, we will create and customize a soft processor with **Nios V** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. By the end, we’ll have LEDs functioning similarly to a previous project, but now controlled by software instead of dedicated hardware.
+In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. By the end, we’ll have LEDs functioning similarly to a previous project, but now controlled by software instead of dedicated hardware.
 
 ## Getting Started
 
