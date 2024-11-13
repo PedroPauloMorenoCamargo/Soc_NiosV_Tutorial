@@ -45,6 +45,19 @@ Intel requires a license to use the Nios V IP in Quartus Prime Lite Edition. Thi
 - The license is valid for a period of one year and will expire afterward. You will need to renew it if you plan to continue using the Nios V IP beyond this period.
 
 
+### Step 3: Setting up the License
+
+Once you receive the `.dat` license file via email, download it and place it in the `flexlm` folder located in the root directory (e.g., `C:\flexlm`). If this folder does not exist, create it.
+
+To configure Quartus to recognize the license, go to **Tools > License Setup** as shown in the image below:
+
+![License Setup Menu](./imgs/License_path.png)
+
+In the License Setup window, add the path to the `.dat` file in the **License File** field. After completing these steps, your setup should resemble the following:
+
+![License File Configuration](./imgs/License_Setup.png)
+
+
 
 
 ---
