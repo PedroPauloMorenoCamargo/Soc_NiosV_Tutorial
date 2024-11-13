@@ -74,7 +74,29 @@ With everything now set up, you’re ready to begin working on the project.
 
 ## DE10-Standard
 
-### Step 1: Setup Files
+### Step 1: Creating The Project
+
+In Quartus: **File ➡️ New Project Wizard**
+
+1. **Directory, Name, Top-Level Entity**
+   - Choose the destination as your repository.
+   - Name the project as `niosv`.
+
+2. **Project Type**
+   - Select **Empty Project**.
+
+3. **Add Files**
+   - We won't add any files for now.
+
+4. **Family, Device & Board Settings**
+   - Look for the FPGA settings:
+     - **Family**: Cyclone V
+     - **Name**: 5CSXFC6D6F31C6
+
+![License File Configuration](./imgs/Project_DE10_settings.png)
+
+5. 🆗 **Finalize the Wizard**
+
 
 
 ---
