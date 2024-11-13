@@ -196,7 +196,7 @@ We will now create a basic SoC with the following components:
     - In Quartus, go to **Tools ➡️ Platform Designer**.
 
 3. **Add Components**:
-    Add the following components with the specified configurations:
+    - Add the following components with the specified configurations:
         - **On-Chip Memory (RAM or ROM Intel FPGA IP)**
             - Type: RAM
             - Memory size: 262144 bytes
