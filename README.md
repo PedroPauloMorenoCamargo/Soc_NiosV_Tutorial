@@ -100,7 +100,7 @@ In Quartus: **File ➡️ New Project Wizard**
 ---
 
 
-### Step 3: Adding the Toplevel
+### Step 2: Adding the Toplevel
 
 First we need to create our toplevel and define our signals. In this project we will use a clock signal as Input and six LEDs as Output. 
 
@@ -138,7 +138,7 @@ Right click the file and set it up as the Top Level Entity:
 
 ---
 
-### Step4: Assigning the I/Os
+### Step3: Assigning the I/Os
 
 First, compile the project by running **Analysis & Synthesis** so that the Pin Planner can automatically recognize the I/Os, eliminating the need to set names manually.
 
@@ -176,7 +176,7 @@ Lastly, click on **Processing ➡️ Start Compilation** or `CTRL + L` to compil
 
 ---
 
-### Step5: Platform Designer (PD)
+### Step4: Platform Designer (PD)
 
 We will now create a basic SoC with the following components:
 
@@ -186,27 +186,33 @@ We will now create a basic SoC with the following components:
 - A **PIO** peripheral (for managing digital outputs)
 - A **JTAG-UART** for debugging via print statements
 
-### Step-by-Step Guide
+#### Step-by-Step Guide
 
 1. **Create a New Project**:
     - Copy the `Lab1_FPGA_RTL/` folder and rename it to `Lab2_FPGA_NIOS/`.
     - Open the project in Quartus from this new folder.
 
 2. **Open Platform Designer**:
-    - In Quartus, go to **Tools** > **Platform Designer**.
+    - In Quartus, go to **Tools ➡️ Platform Designer**.
 
 3. **Add Components**:
     - Add the following components with the specified configurations:
         - **On-Chip Memory (RAM or ROM Intel FPGA IP)**
             - Type: RAM
-            - Memory size: 32768 bytes
+            - Memory size: 262144 bytes
         - **JTAG UART Intel FPGA IP**
             - Default settings
         - **PIO (Parallel I/O) Intel FPGA IP**
             - Width: 6
             - Direction: Output
         - **Nios V Processor**
-            - Type: Nios V/e
+            - Type: Nios V/m
+            - Enable Debug and Enable Reset from Debug Module
+            - Reset Agent: The On-Chip Memory Added
+
+4. **Make the Connections**:
+    ![PD_DE10](PD_DE10.png)
+
 
 ---
 
