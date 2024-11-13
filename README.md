@@ -214,7 +214,6 @@ We will now create a basic SoC with the following components:
 
 4. **Make the Connections**:
     - Refer to the image below for the correct connections:
-    
     ![PD_DE10](./imgs/PD_DE10.png)
 
 5. **Assign Base Addresses**:
