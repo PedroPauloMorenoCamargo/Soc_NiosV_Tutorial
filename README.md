@@ -128,8 +128,8 @@ architecture rtl of Nios_V_RTL is
 
 begin
 
-end rtl;```
-
+end rtl;
+```
 
 
 
