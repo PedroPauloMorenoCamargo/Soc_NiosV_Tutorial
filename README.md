@@ -212,7 +212,7 @@ We will now create a basic SoC with the following components:
 
 4. **Assign Base Addresses**:
     - There may still be some errors due to memory assignments. To resolve these, click on **System ➡️ Assign Base Addresses** to have the system automatically assign memory spaces without conflicts.
-    **Observation**:
+    - a**Observation**:
         - The warnings and informational messages shown in the image below are expected and are not problematic.
         ![Warnings](./imgs/Warnings_DE10.png)
 
