@@ -34,7 +34,7 @@ Once downloaded, place all files in the same folder, as shown below:
 
 Now, run the `QuartusSetup.exe` file to initiate the installation process.
 
-If Quartus is already installed, you can skip to this step. Download the **Ashling RiscFree IDE** and run the RiscFree executable to set it up as an external tool.
+If Quartus is already installed, you should only download the **Ashling RiscFree IDE** and run the RiscFree executable to set it up as an external tool.
 
 
 
