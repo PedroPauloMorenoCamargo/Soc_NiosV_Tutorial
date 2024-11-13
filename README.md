@@ -1,20 +1,24 @@
 # Nios V FPGA Tutorial
 
-In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. This is a follow-up of the Tutorial-FPGA-NIOS.
+In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. This is a follow-up of the [Tutorial-FPGA-NIOS](https://insper.github.io/Embarcados-Avancados/Tutorial-FPGA-NIOS/).
 
 ## Getting Started
 
 To follow this tutorial, you will need:
 
 - **Hardware**: DE10-Standard and DE0-CV
-- **Software**: Quartus 23.1std(23.1.1) or later
-- **Documents**: DE10-Standard_User_manual.pdf, DE0_CV_User_Manual_v1,12.pdf and AN 985:_Nios_V_Processor Tutorial.pdf
+- **Software**: Quartus 23.1std (23.1.1) or later
+- **Documents**:
+  - [DE10-Standard_User_manual.pdf](./DE10-Standard_User_manual.pdf)
+  - [DE0_CV_User_Manual_v1.12.pdf](./DE0_CV_User_Manual_v1.12.pdf)
+  - [AN-784468-784469.pdf](./an-784468-784469.pdf)
 
 ---
 
 ## Setting Up the Tools
 
-Firstly, to start the project it's necessary to download the tools which we are going to use. Those tools are Quartus 23.1std or later and 
+Firstly, to start the project it’s necessary to download the tools which we are going to use. Those tools are Quartus 23.1std or later and ...
+
 
 ---
 
