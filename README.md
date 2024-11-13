@@ -137,6 +137,20 @@ Right click the file and set it up as the Top Level Entity:
 
 ### Step4: Assigning the I/Os
 
+First, compile the project by running **Analysis & Synthesis** so that the Pin Planner can automatically recognize the I/Os, eliminating the need to set names manually.
+
+1. Click on **Processing ➡️ Start ➡️ Start Analysis & Synthesis** or press `CTRL + K`.
+
+To edit the pin assignments:
+
+1. Go to **Assignments ➡️ Pin Planner**.
+
+According to the [DE10-Standard User Manual](./pdfs/DE10-Standard_User_manual.pdf), your pin assignments should resemble the following configuration:
+
+![Pin Configuration](./imgs/Pins_DE10.png)
+
+
+
 
 
 ---
