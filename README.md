@@ -170,9 +170,9 @@ To create a new constraints file, follow these steps:
 
     ```
 
-Lastly, recompile the project to apply the changes. After recompiling, you should observe that there are no longer any critical errors in the project.
+Lastly, click on **Processing ➡️ Start Compilation** or `CTRL + L` to compile the project so that the changes are applied. After compiling, you should observe that there are no longer any critical errors in the project.
 
-
+### Step5: Platform Designer (PD)
 
 ---
 
