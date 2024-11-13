@@ -1,36 +1,20 @@
-# Nios V Tutorial
+# Nios V FPGA Tutorial
 
-In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. By the end, we’ll have LEDs functioning similarly to a previous project, but now controlled by software instead of dedicated hardware.
+In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. This is a follow-up of the Tutorial-FPGA-NIOS.
 
 ## Getting Started
 
 To follow this tutorial, you will need:
 
-- **Hardware**: DE10-Standard and accessories
-- **Software**: Quartus 23.1 or later
-- **Documents**: DE10-Standard_User_manual.pdf
-
-### Warning
-
-Below is a link with tips for solving potential issues during this tutorial:
-
-[Possible Issues in FPGA Nios Tutorial](#)
+- **Hardware**: DE10-Standard and DE0-CV
+- **Software**: Quartus 23.1std(23.1.1) or later
+- **Documents**: DE10-Standard_User_manual.pdf, DE0_CV_User_Manual_v1,12.pdf and AN 985:_Nios_V_Processor Tutorial.pdf
 
 ---
 
-## Soft Processor Overview
+## Setting Up the Tools
 
-Hardware Description Language (HDL) projects are not very flexible; each modification implies hardware changes, which can be complex. Implementing and testing these changes often takes time. One way to make projects more flexible is to control LEDs (or other outputs) using a microcontroller synthesized within the FPGA.
-
-Since the FPGA can implement digital logic circuits, it’s possible to synthesize a microcontroller (or soft processor) that can execute instructions to control hardware elements like LEDs.
-
-Examples of soft processors include:
-
-- **NIOS II**: Intel
-- **MicroBlaze**: Xilinx
-- **LEON**: Gaisler (for aerospace/ SPARC architecture)
-
-Adding peripherals and functionalities to a soft processor creates a **System on Chip (SoC)**.
+Firstly, to start the project it's necessary to download the tools which we are going to use. Those tools are Quartus 23.1std or later and 
 
 ---
 
