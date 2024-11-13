@@ -211,7 +211,7 @@ We will now create a basic SoC with the following components:
             - Reset Agent: The On-Chip Memory Added
 
 4. **Make the Connections**:
-    ![PD_DE10](PD_DE10.png)
+    ![PD_DE10](./imgs/PD_DE10.png)
 
 
 ---
