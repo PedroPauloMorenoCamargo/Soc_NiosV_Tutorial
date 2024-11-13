@@ -97,12 +97,12 @@ In Quartus: **File ➡️ New Project Wizard**
 
 5. 🆗 **Finalize the Wizard**
 
+---
 
-### Step 2: Adding the Toplevel
+
+### Step 3: Adding the Toplevel
 
 First we need to create our toplevel and define our signals. In this project we will use a clock signal as Input and six LEDs as Output. 
-
-### Step3: Adding the Toplevel File to the Project
 
 To add a new file to the project, follow these steps:
 
@@ -135,6 +135,8 @@ end rtl;
 Right click the file and set it up as the Top Level Entity:
 
 1. **Project ➡️ Set as Top-Level Entity**
+
+---
 
 ### Step4: Assigning the I/Os
 
@@ -172,27 +174,9 @@ To create a new constraints file, follow these steps:
 
 Lastly, click on **Processing ➡️ Start Compilation** or `CTRL + L` to compile the project so that the changes are applied. After compiling, you should observe that there are no longer any critical errors in the project.
 
-### Step5: Platform Designer (PD)
-
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Creating a Simple SoC
+### Step5: Platform Designer (PD)
 
 We will now create a basic SoC with the following components:
 
