@@ -7,17 +7,35 @@ In this tutorial, we will create and customize a soft processor with **Nios** (a
 To follow this tutorial, you will need:
 
 - **Hardware**: DE10-Standard and DE0-CV
-- **Software**: Quartus 23.1std (23.1.1) or later
+- **Software**: Quartus 23.1std (23.1.1) or later and Ashling RiscFree IDE
+- **OS**: Windows
 - **Documents**:
-  - [DE10-Standard_User_manual.pdf](./DE10-Standard_User_manual.pdf)
-  - [DE0_CV_User_Manual_v1.12.pdf](./DE0_CV_User_Manual_v1.12.pdf)
-  - [AN-784468-784469.pdf](./an-784468-784469.pdf)
+  - [DE10-Standard_User_manual.pdf](./pdfs/DE10-Standard_User_manual.pdf)
+  - [DE0_CV_User_Manual_v1.12.pdf](./pdfs/DE0_CV_User_Manual_v1.12.pdf)
+  - [AN-784468-784469.pdf](./pdfs/an-784468-784469.pdf)
 
 ---
 
 ## Setting Up the Tools
 
-Firstly, to start the project it’s necessary to download the tools which we are going to use. Those tools are Quartus 23.1std or later and ...
+To get started with the project, you’ll need to download and install a few essential tools. These include **Quartus 23.1std (or later)** and the **Ashling RiscFree IDE**, which will be used to compile and run the project, respectively.
+
+### Step 1: Download
+
+If Quartus is not yet installed on your system, begin by downloading the necessary files from the [Intel Website](https://www.intel.com/content/www/us/en/software-kit/825278/intel-quartus-prime-lite-edition-design-software-version-23-1-1-for-windows.html). Ensure you download the following files:
+
+- **Quartus Download**: ![Quartus Download](./imgs/Quartus_download.png)
+- **Cyclone V Download**: ![Cyclone V Download](./imgs/Cyclonev_Download.png)
+- **Quartus Build**: ![Quartus Build](./imgs/Quartus_Build.png)
+
+Once downloaded, place all files in the same folder, as shown below:
+
+**Image of files grouped together**: ![Grouped Files](./imgs/Quartus_Build.png)
+
+Now, run the `QuartusSetup.exe` file to initiate the installation process.
+
+If Quartus is already installed, you can skip to this step. Download the **Ashling RiscFree IDE** and run the RiscFree executable to set it up as an external tool.
+
 
 
 ---
