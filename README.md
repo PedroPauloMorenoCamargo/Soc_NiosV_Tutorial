@@ -113,7 +113,7 @@ To add a new file to the project, follow these steps:
 
 Open the `Nios_V_RTL.vhd` file you created and add the following template code. This will serve as a starting point, allowing us to assign signals later on:
 
-```vhdl
+\```vhdl
 library IEEE;
 use IEEE.std_logic_1164.all;
 
@@ -129,7 +129,7 @@ architecture rtl of Nios_V_RTL is
 begin
 
 end rtl;
-```
+\```
 
 
 
