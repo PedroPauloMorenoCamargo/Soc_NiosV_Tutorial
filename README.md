@@ -1,6 +1,6 @@
 # Nios V FPGA Tutorial
 
-In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs. This is a follow-up of the [Tutorial-FPGA-NIOS](https://insper.github.io/Embarcados-Avancados/Tutorial-FPGA-NIOS/).
+In this tutorial, we will create and customize a soft processor with **Nios** (an embedded system with a processor and peripherals), embed it in the FPGA, and write code to control LEDs.
 
 ## Getting Started
 
@@ -73,6 +73,9 @@ With everything now set up, you’re ready to begin working on the project.
 ---
 
 ## DE10-Standard
+
+This tutorial references both the [Tutorial FPGA RTL](https://insper.github.io/Embarcados-Avancados/Tutorial-FPGA-RTL/) and [Tutorial FPGA NIOS](https://insper.github.io/Embarcados-Avancados/Tutorial-FPGA-NIOS/). It’s recommended to go through these tutorials first, as they cover essential concepts like project creation, the Pin Planner, Platform Designer, and more.
+
 
 ### Step 1: Creating The Project
 
@@ -152,7 +155,7 @@ According to the [DE10-Standard User Manual](./pdfs/DE10-Standard_User_manual.pd
 
 ![Pin Configuration](./imgs/Pins_DE10.png)
 
-Furthermore, you need to add a new file to the project that outlines the boundary conditions of the project for the tool.
+Furthermore, you need to add a new file to the project that outlines the boundary conditions of the project for the tool, so that the clock is properly assigned.
 
 To create a new constraints file, follow these steps:
 
@@ -223,20 +226,11 @@ We will now create a basic SoC with the following components:
 
 6. **Generate HDL**:
     - Click on Generate HDL for the PD to generate the project.
-    - Select `Create HDL Design Files For Synthesis: VHDL`
-
-
----
-
-## Connecting Clock and Reset
-
-All peripherals need to be connected to the clock and reset signals. In Platform Designer, connect all clock and reset signals to the `clk` and `clk_rst` signals of the `clk_0` peripheral.
+    - In`Create HDL Design Files For Synthesis` select `VHDL`
 
 ---
 
-## Connecting the Bus
-
-The main communication bus in Platform Designer is the Avalon bus, which is used to connect peripherals to the Nios V processor.
+### Step5: Compiling the Project
 
 ---
 
