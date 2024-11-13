@@ -188,6 +188,8 @@ We will now create a basic SoC with the following components:
 
 #### Step-by-Step Guide
 
+#### Step-by-Step Guide
+
 1. **Create a New Project**:
     - Copy the `Lab1_FPGA_RTL/` folder and rename it to `Lab2_FPGA_NIOS/`.
     - Open the project in Quartus from this new folder.
@@ -208,10 +210,19 @@ We will now create a basic SoC with the following components:
         - **Nios V Processor**
             - Type: Nios V/m
             - Enable Debug and Enable Reset from Debug Module
-            - Reset Agent: The On-Chip Memory Added
+            - Reset Agent: The On-Chip Memory added
 
 4. **Make the Connections**:
+    - Refer to the image below for the correct connections:
+    
     ![PD_DE10](./imgs/PD_DE10.png)
+
+5. **Assign Base Addresses**:
+    - There may still be some errors due to memory assignments. To resolve these, click on **System ➡️ Assign Base Addresses** to have the system automatically assign memory spaces without conflicts.
+
+**Observation**:
+   - The warnings and informational messages shown in the image below are expected and are not problematic.
+   ![Warnings](./imgs/Warnings_DE10.png)
 
 
 ---
