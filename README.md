@@ -92,8 +92,7 @@ In Quartus: **File ➡️ New Project Wizard**
    - Look for the FPGA settings:
      - **Family**: Cyclone V
      - **Name**: 5CSXFC6D6F31C6
-
-![License File Configuration](./imgs/Project_DE10_settings.png)
+     -  ![License File Configuration](./imgs/Project_DE10_settings.png)
 
 5. 🆗 **Finalize the Wizard**
 
