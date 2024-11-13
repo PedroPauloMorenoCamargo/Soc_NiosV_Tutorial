@@ -36,6 +36,15 @@ Now, run the `QuartusSetup.exe` file to initiate the installation process.
 
 If Quartus is already installed, you should only download the **Ashling RiscFree IDE** and run the RiscFree executable to set it up as an external tool.
 
+### Step 2: Downloading the License
+
+Intel requires a license to use the Nios V IP in Quartus Prime Lite Edition. This license is essential to proceed with this project. Follow the instructions in the [License Nios V Guide](https://www.macnica.co.jp/en/business/semiconductor/articles/intel/140701/) to obtain the necessary license.
+
+**Notes:**
+- For this project, we will use the **Nios V/m IP**. Make sure to download this specific license.
+- The license is valid for a period of one year and will expire afterward. You will need to renew it if you plan to continue using the Nios V IP beyond this period.
+
+
 
 
 ---
