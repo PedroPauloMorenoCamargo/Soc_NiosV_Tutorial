@@ -98,6 +98,41 @@ In Quartus: **File ➡️ New Project Wizard**
 5. 🆗 **Finalize the Wizard**
 
 
+### Step 2: Adding the Toplevel
+
+First we need to create our toplevel and define our signals. In this project we will use a clock signal as Input and six LEDs as Output. 
+
+### Step3: Adding the Toplevel File to the Project
+
+To add a new file to the project, follow these steps:
+
+1. Go to **File ➡️ New** or press `CTRL + N`.
+2. Select **VHDL File**.
+3. Save the file by navigating to **File ➡️ Save As**.
+   - Name the file as `Nios_V_RTL.vhd`.
+4. 🆗 Confirm to save the file.
+
+Open the `Nios_V_RTL.vhd` file you created and add the following template code. This will serve as a starting point, allowing us to assign signals later on:
+
+```vhdl
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Nios_V_RTL is
+    port (
+        fpga_clk_50   : in  std_logic;
+        fpga_led_pio  : out std_logic_vector(5 downto 0)
+    );
+end entity Nios_V_RTL;
+
+architecture rtl of Nios_V_RTL is
+
+begin
+
+end rtl;```
+
+
+
 
 ---
 
