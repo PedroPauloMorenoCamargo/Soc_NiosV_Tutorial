@@ -306,40 +306,41 @@ Before compiling the project, complete the following steps:
       ![Add QIP File](./imgs/Add.png)
 
 2. **Add the NIOS-V to the `Nios_V_RTL.vhd` file**
-```vhdl
-library IEEE;
-use IEEE.std_logic_1164.all;
 
-entity Nios_V_RTL is
-    port (
-        -- Gloabals
-        fpga_clk_50   : in  std_logic;
-		  fpga_led_pio  : out std_logic_vector(5 downto 0)
-  );
-end entity Nios_V_RTL;
+    ```vhdl
+    library IEEE;
+    use IEEE.std_logic_1164.all;
 
-architecture rtl of Nios_V_RTL is
-
- component niosv is
+    entity Nios_V_RTL is
         port (
-            clk_clk       : in std_logic := 'X';
-            reset_reset_n : in std_logic := 'X';
-				leds_export   : out std_logic_vector(5 downto 0)
-        );
-end component niosv;
+            -- Gloabals
+            fpga_clk_50   : in  std_logic;
+            fpga_led_pio  : out std_logic_vector(5 downto 0)
+    );
+    end entity Nios_V_RTL;
 
-begin
+    architecture rtl of Nios_V_RTL is
 
-u0 : component niosv
-        port map (
-            clk_clk       => fpga_clk_50,
-            reset_reset_n => '1' ,
-			   leds_export   => fpga_led_pio
-				
-        );
+    component niosv is
+            port (
+                clk_clk       : in std_logic := 'X';
+                reset_reset_n : in std_logic := 'X';
+                    leds_export   : out std_logic_vector(5 downto 0)
+            );
+    end component niosv;
 
-end rtl;
-```
+    begin
+
+    u0 : component niosv
+            port map (
+                clk_clk       => fpga_clk_50,
+                reset_reset_n => '1' ,
+                leds_export   => fpga_led_pio
+                    
+            );
+
+    end rtl;
+    ```
 
 
 
