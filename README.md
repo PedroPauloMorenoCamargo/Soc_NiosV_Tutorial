@@ -306,7 +306,7 @@ Before compiling the project, complete the following steps:
       ![Add QIP File](./imgs/Add.png)
 
 2. **Add the NIOS-V to the `Nios_V_RTL.vhd` file**
-    - ```vhdl
+```vhdl
 library IEEE;
 use IEEE.std_logic_1164.all;
 
