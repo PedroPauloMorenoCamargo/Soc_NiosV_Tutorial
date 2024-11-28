@@ -297,12 +297,32 @@ The platform designer part is done, so exit the PD windown to proceed.
 
 ### Step5: Compiling the Project    
 
-Before compiling there is two steps necessary:
+Before compiling the project, complete the following steps:
 
-1. Add the "niosv.qip" file in the project:
-    - In order to do so click in **Project ➡️ Add/Remove Files in Project...**
-    ![ADD Remove](./imgs/Add2.png)
+1. **Add the `niosv.qip` file to the project**:
+    - Click on **Project ➡️ Add/Remove Files in Project...**  
+      ![Add/Remove Files](./imgs/Add2.png)
+    - Click on **Add ➡️ Add the `.qip` file ➡️ Apply**.  
+      ![Add QIP File](./imgs/Add.png)
 
-    - Click on  **Add ➡️ add the ".qip" file ➡️ apply**
-    ![ADD Remove](./imgs/Add.png)
+2. **Add the NIOS-V to the `Nios_V_RTL.vhd` file**
+    - ```vhdl
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Nios_V_RTL is
+    port (
+        fpga_clk_50   : in  std_logic;
+        fpga_led_pio  : out std_logic_vector(5 downto 0)
+    );
+end entity Nios_V_RTL;
+
+architecture rtl of Nios_V_RTL is
+
+begin
+
+end rtl;
+```
+
+
 
