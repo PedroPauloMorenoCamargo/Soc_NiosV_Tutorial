@@ -291,7 +291,18 @@ We will now create a basic SoC with the following components:
     - Click on Generate HDL for the PD to generate the project.
     - In`Create HDL Design Files For Synthesis` select `VHDL`
 
+The platform designer part is done, so exit the PD windown to proceed.   
+
 ---
 
-### Step5: Compiling the Project
+### Step5: Compiling the Project    
+
+Before compiling there is two steps necessary:
+
+1. Add the "niosv.qip" file in the project:
+    - In order to do so click in **Project ➡️ Add/Remove Files in Project...**
+    ![ADD Remove](./imgs/Add2.png)
+
+    - Click on  **Add ➡️ add the ".qip" file ➡️ apply**
+    ![ADD Remove](./imgs/Add.png)
 
