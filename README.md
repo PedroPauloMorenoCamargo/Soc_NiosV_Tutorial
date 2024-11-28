@@ -476,6 +476,48 @@ To program the software, complete the following steps:
 
     This code makes the LEDs connected to the PIO blink sequentially in a loop, demonstrating basic hardware control using the Avalon memory-mapped interface.
 
+4. **Build Project**
+    - Right-click on the **app** folder and select **Build Project**.  
+      ![Build a project](./imgs/Free4.png)
+
+    - **Expected Console Output**:  
+      In case of success, the console should display a message similar to the following:  
+      ```text
+      05:54:13 Buildscript generation finished (took 11216 ms)
+      ```
+
+5. **Connect the Juart**
+
+The **JUART (JTAG UART)** is a hardware peripheral commonly used in FPGA designs for serial communication. It provides a simple way to transmit and receive data between an embedded system (like a Nios II or Nios V processor) and a host computer through a **JTAG (Joint Test Action Group)** interface.
+
+- There are two ways to connect the Juart:
+
+    1. **Connect via `niosv-shell`**:
+        - Open a terminal and type:
+            ```bash
+            juart-terminal
+            ```
+
+    2. **Set up the Juart in the IDE**:
+        - Navigate to **Run ➡️ External Tools ➡️ External Tools Configurations**.
+        - Double-click on **Program** to create a new configuration.
+        - Use the following settings:
+            - **Location**:  
+                ```text
+                intelFPGA_lite/23.1std/quartus/bin64/juart-terminal.exe
+                ```
+            - **Arguments**:  
+                ```text
+                -c 1 -d 0 -i 0
+                 ```
+            - Click **Apply** to save the configuration.  
+              ![External Tools Configuration](./imgs/Tools.png)
+
+
+
+
+
+
     
 
 
