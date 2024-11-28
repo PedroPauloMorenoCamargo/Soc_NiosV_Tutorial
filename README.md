@@ -361,9 +361,10 @@ The **Board Support Package (BSP)** is a collection of software libraries and co
 
 To set up the BSP and software, complete the following steps:
 1. **Opening the Shell**:
-    - Open the `niosv-shell.exe` located at `intelFPGA_lite/23.1std/niosv/bin` 
+    - Open the `niosv-shell.exe` located at `intelFPGA_lite/23.1std/niosv/bin`.
+
     ![Shell](./imgs/Shell1.png)
-    - Navigate to the project directory
+    - Navigate to the project directory,
 
 2. **Create the BSP**:
     - Run the following command:
@@ -380,7 +381,40 @@ To set up the BSP and software, complete the following steps:
     - This command ensures that a **Nios V BSP of type HAL** is created based on the hardware description provided in the `.sopcinfo` file, and it will be stored at the specified path: `software/bsp/settings.bsp`.
 
     - The response below should be shown after creating the BSP, and a software directory should be created at the root of the project containing the directory bsp and the file settings.bsp.
+
     ![Shell](./imgs/Shell2.png)
+
+3. **Create the App**:
+    - Create a new folder inside `/software` named `app`.
+    - In the new folder, create a `.c` file named `leds.c`.
+    - Run the following command:    
+        ```bash
+        niosv-app -a=software/app -b=software/bsp -s=software/app/leds.c
+        ```
+    - **Explanation**:
+        - **`niosv-app`**: This command is used to create a Nios V application.
+        - **`-a=software/app`**: Specifies the application directory. Here, it points to `software/app`, where the application files are stored.
+        - **`-b=software/bsp`**: Specifies the path to the BSP configuration directory created earlier.
+        - **`-s=software/app/leds.c`**: Specifies the main source file for the application, in this case, `leds.c`.
+
+    - This ensures that a new application is correctly linked with the previously created BSP, and the application files are initialized in the specified directory.
+
+    - The response below should be shown after creating the application:
+
+        ```bash
+        2024.11.28.05:31:11 Info: "software\app\CMakeLists.txt" was generated.
+        ```
+
+    - This indicates that the application setup is complete and the necessary build files (`CMakeLists.txt`) have been successfully generated in the specified directory.
+
+---
+
+### Step7: Programming the Software
+
+## Ashling RiscFree IDE
+[RiscFree IDE](https://www.ashling.com/ashling-riscfree/) is an Integrated Development Environment (IDE) based on Eclipse, developed by Ashling to support the development of embedded applications for the RISC-V architecture. It provides a comprehensive suite of tools and features for software developers working with RISC-V-based processors and systems.
+
+
 
 
     
