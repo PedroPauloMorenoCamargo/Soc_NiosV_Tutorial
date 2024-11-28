@@ -414,9 +414,23 @@ To set up the BSP and software, complete the following steps:
 ## Ashling RiscFree IDE
 [RiscFree IDE](https://www.ashling.com/ashling-riscfree/) is an Integrated Development Environment (IDE) based on Eclipse, developed by Ashling to support the development of embedded applications for the RISC-V architecture. It provides a comprehensive suite of tools and features for software developers working with RISC-V-based processors and systems.
 
+To program the software, complete the following steps:
 
+1. **Open RiscFree IDE**
+    - Type `riscfree` in the niosv-shell.
+    - Select the **software** folder as the workspace path and click **Launch**.
 
-
+2. **Creating the Project**
+    - Click on **Create a project...**  
+      ![Create a project](./imgs/Free.png)
+    - Select **C/C++ ➡️ C Project**.  
+      ![Select C Project](./imgs/Free2.png)
+    - In the next step:
+        - Select **CMake driven ➡️ Empty Project**.
+        - Uncheck **Use default location**.
+        - Set the **app** folder as the location and name the project **app**.  
+          ![Project Configuration](./imgs/Free3.png)
+    - Finally, click **Finish** to create the project.
     
 
 
