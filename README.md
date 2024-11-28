@@ -411,7 +411,7 @@ To set up the BSP and software, complete the following steps:
 
 ### Step7: Programming the Software
 
-## Ashling RiscFree IDE
+#### Ashling RiscFree IDE
 [RiscFree IDE](https://www.ashling.com/ashling-riscfree/) is an Integrated Development Environment (IDE) based on Eclipse, developed by Ashling to support the development of embedded applications for the RISC-V architecture. It provides a comprehensive suite of tools and features for software developers working with RISC-V-based processors and systems.
 
 To program the software, complete the following steps:
@@ -431,6 +431,51 @@ To program the software, complete the following steps:
         - Set the **app** folder as the location and name the project **app**.  
           ![Project Configuration](./imgs/Free3.png)
     - Finally, click **Finish** to create the project.
+
+3. **Write the LED Code**
+    - Open the **app** folder and click on `leds.c`, then write the following code:
+
+    ```c
+    #include <stdio.h>
+    #include "system.h"
+    #include <alt_types.h>
+    #include <io.h> // For Avalon read/write
+
+    void delay(int n) {
+        volatile unsigned int delay = 0;
+        while (delay < n) {
+            delay++;
+        }
+    }
+
+    int main(void) {
+        unsigned int led = 0;
+
+        printf("Embarcados++ \n");
+
+        while (1) {
+            if (led < PIO_0_DATA_WIDTH) { // Use defined data width of the PIO
+                IOWR_32DIRECT(PIO_0_BASE, 0, 0x01 << led++);
+                usleep(50000); // 50ms delay
+            } else {
+                led = 0;
+            }
+        }
+
+        return 0;
+    }
+    ```
+
+    - **Explanation**:
+        - Initializes an LED counter (`led`) and prints "Embarcados++" to the console.
+        - In the `while (1)` loop:
+        - Shifts a bit left through the LEDs connected to the PIO, lighting them sequentially.
+        - Uses `IOWR_32DIRECT` to write to the Avalon interface, controlling the LEDs.
+        - Delays for 50ms using `usleep(50000)`.
+        - Resets the counter (`led`) when it reaches the width of the PIO.
+
+    This code makes the LEDs connected to the PIO blink sequentially in a loop, demonstrating basic hardware control using the Avalon memory-mapped interface.
+
     
 
 
