@@ -297,7 +297,7 @@ The platform designer part is done, so exit the PD windown to proceed.
 
 ### Step5: Compiling the Project    
 
-Before compiling the project, complete the following steps:
+To compile the project, complete the following steps:
 
 1. **Add the `niosv.qip` file to the project**:
     - Click on **Project ➡️ Add/Remove Files in Project...**  
@@ -341,6 +341,20 @@ Before compiling the project, complete the following steps:
 
     end rtl;
     ```
+
+3. **Compiling**:
+    - Click on **Start Compilation** or press `CTRL+L`.  
+      ![Compile](./imgs/Compile.png)
+    - After the compilation is done, click on **Program Device (Open Programmer)** in the task window.  
+      ![Compile2](./imgs/Compile2.png)
+    - Set the device as taught in tutorial 1 and click on **Start**.
+    ![Compile2](./imgs/Compile3.png)
+
+Now that Nios-V is set on the FPGA, we can proceed to programming the software.
+
+
+---
+    
 
 
 
