@@ -498,7 +498,7 @@ The **JUART (JTAG UART)** is a hardware peripheral commonly used in FPGA designs
             juart-terminal
             ```
 
-    2. **Set up the Juart in the IDE**:
+    2. **Set up the Juart in the IDE as an External Tool**:
         - Navigate to **Run ➡️ External Tools ➡️ External Tools Configurations**.
         - Double-click on **Program** to create a new configuration.
         - Use the following settings:
@@ -512,6 +512,27 @@ The **JUART (JTAG UART)** is a hardware peripheral commonly used in FPGA designs
                  ```
             - Click **Apply** to save the configuration.  
               ![External Tools Configuration](./imgs/Tools.png)
+
+6. **Run**
+    - Right-click on the **app** folder and select **Run as ➡️ Ashling RISC-V Hardware Debugging**.  
+      ![Run as Hardware Debugging](./imgs/Run_as.png)
+    - Select **app.elf** as the target file.  
+      ![Select ELF File](./imgs/Run.png)
+    - In the **Edit Configuration - Debugger** window:
+        - Click on **Auto-detect Scan Chain**.
+        - Change the **Device/Tap Selection** to the FPGA.
+        - Click **Apply**.
+         ![Select ELF File](./imgs/Run4.png)
+
+With all the steps completed, the application should run successfully, producing the expected result.
+
+### Output:
+- **Result**: See the demonstration in the video below:
+
+  *Video Placeholder*
+
+
+
 
 
 
