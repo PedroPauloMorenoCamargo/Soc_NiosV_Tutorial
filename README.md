@@ -354,6 +354,35 @@ Now that Nios-V is set on the FPGA, we can proceed to programming the software.
 
 
 ---
+
+### Step6: Setting Up the Software
+
+The **Board Support Package (BSP)** is a collection of software libraries and configuration files that provide the interface between the operating system or application software and the specific hardware of a system. It enables the software to correctly interact with the peripherals and functionalities defined in the hardware design.
+
+To set up the BSP and software, complete the following steps:
+1. **Opening the Shell**:
+    - Open the `niosv-shell.exe` located at `intelFPGA_lite/23.1std/niosv/bin` 
+    ![Shell](./imgs/Shell1.png)
+    - Navigate to the project directory
+
+2. **Create the BSP**:
+    - Run the following command:
+        ```bash
+        niosv-bsp -c -t=hal --sopcinfo=niosv.sopcinfo software/bsp/settings.bsp
+        ```
+    - **Explanation**:
+        - **`niosv-bsp`**: This is the command to create a Board Support Package (BSP) for Nios V.
+        - **`-c`**: Indicates that the BSP configuration will be created or updated.
+        - **`-t=hal`**: Specifies the type of BSP as HAL (Hardware Abstraction Layer).
+        - **`--sopcinfo=niosv.sopcinfo`**: Points to the `.sopcinfo` file, which describes the hardware system configuration.
+        - **`software/bsp/settings.bsp`**: The location and name for the BSP settings file that will be generated.
+
+    - This command ensures that a **Nios V BSP of type HAL** is created based on the hardware description provided in the `.sopcinfo` file, and it will be stored at the specified path: `software/bsp/settings.bsp`.
+
+    - The response below should be shown after creating the BSP, and a software directory should be created at the root of the project containing the directory bsp and the file settings.bsp.
+    ![Shell](./imgs/Shell2.png)
+
+
     
 
 
