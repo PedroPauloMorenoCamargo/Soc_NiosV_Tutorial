@@ -14,18 +14,81 @@ To follow this tutorial, you will need:
   - [DE0_CV_User_Manual_v1.12.pdf](./pdfs/DE0_CV_User_Manual_v1.12.pdf)
   - [AN-784468-784469.pdf](./pdfs/an-784468-784469.pdf)
 
+
+
+## RISC
+
+**Reduced Instruction Set Computer (RISC)** is a computer architecture based on the concept of simplifying instructions so that each performs only one function at a time. This model has the opposite idea of CISC(Complex Instruction Set Computer) which has a large set of complex instructions which makes it extremely versatile. RISC design aims to increase the speed of individual instructions by enabling the use of an instruction pipeline, allowing multiple instructions to be processed simultaneously at different stages of execution. By focusing on a smaller set of simple instructions, RISC reduces complexity and increases performance efficiency. Furthermore, most instructions are designed to execute in a single clock cycle, especially in pipelined architectures.
+
+
+## RISC-V
+
+**RISC-V** is an open and free instruction set architecture (ISA) based on RISC principles, designed for simplicity, flexibility, and scalability. Its modular design includes a minimal base instruction set with optional extensions, enabling customization for a wide range of applications, from embedded systems to high-performance computing. Unlike proprietary ISAs, RISC-V is open-source, fostering innovation and reducing development costs.
+
 ---
 
-## Nios V
+## Nios-V
 
-**Nios V** is a soft processor provided by Intel and integrated into Quartus. Based on a RISC-V architecture, Nios V supports the addition of custom instructions implemented in HDL. This makes it highly customizable.
+**Nios-V** is a soft processor provided by Intel and integrated into Quartus. Based on a RISC-V architecture, Nios V supports the addition of custom instructions implemented in HDL. This makes it highly customizable.
 
 ---
 
 
 ## Comparison Nios V and Nios II
 
+### 1. Instruction Set Architecture (ISA)
+- **Nios II:**
+  - *"Nios II is a 32-bit embedded processor architecture designed specifically for the Altera family of field-programmable gate array (FPGA) integrated circuits."*  
+    ([Wikipedia - Nios II](https://en.wikipedia.org/wiki/Nios_II))
 
+- **Nios V:**
+  - *"The Nios V/m processor is a microcontroller core developed by Intel based on the RISC-V RV32IA instruction set..."*  
+    ([Intel Documentation](https://cdrdv2-public.intel.com/679983/ug20343-683632-679983.pdf))
+
+---
+
+### 2. Customizability
+- **Nios II:**
+  - *"The soft-core nature of the Nios II processor lets the system designer specify and generate a custom Nios II core, tailored for his or her specific application requirements."*  
+    ([Wikipedia - Nios II](https://en.wikipedia.org/wiki/Nios_II))
+
+- **Nios V:**
+  - *"The Nios V processor family is based upon the open-source RISC-V instruction set architecture (ISA), which provides a modular and extensible approach to processor design."*  
+    ([Intel Technical Documentation](https://www.intel.com/programmable/technical-pdfs/726952.pdf))
+
+---
+
+### 3. Toolchain
+- **Nios II:**
+  - *"The Nios II EDS includes the following two closely-related software development tool flows: The Nios II SBT and The Nios II SBT for Eclipse. Both tools flows are based on the GNU C/C++ compiler."*  
+    ([Intel Documentation](https://cdrdv2-public.intel.com/705142/n2sw_nii5v2gen2-17-0-683525-705142.pdf))
+
+- **Nios V:**
+  - *"The Nios V processor utilizes the open-source RISC-V GCC toolchain for software development, supported by Intel's Quartus Prime software for hardware integration."*  
+    ([Intel Technical Documentation](https://www.intel.com/programmable/technical-pdfs/726952.pdf))
+
+---
+
+### 4. Performance
+- **Nios II:**
+  - *"Performance up to 250 DMIPS."*  
+    ([Intel Documentation](https://www.intel.com/programmable/technical-pdfs/683620.pdf))
+
+- **Nios V:**
+  - *"The Nios V/m processor is designed to offer enhanced performance compared to its predecessors, leveraging the efficiencies of the RISC-V architecture."*  
+    ([Intel Technical Documentation](https://www.intel.com/programmable/technical-pdfs/726952.pdf))
+
+---
+
+### 5. Ecosystem
+- **Nios II:**
+  - *"Development is hosted inside an Altera application called the Embedded Design Suite (EDS). The EDS contains a complete integrated development environment to manage both hardware and software..."*  
+    ([Wikipedia - Nios II](https://en.wikipedia.org/wiki/Nios_II))
+
+- **Nios V:**
+  - *"The adoption of the RISC-V ISA allows Nios V to benefit from a growing ecosystem of open-source tools and software."*  
+    ([Intel Technical Documentation](https://www.intel.com/programmable/technical-pdfs/726952.pdf))
+    
 ---
 ## Setting Up the Tools
 
